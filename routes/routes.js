@@ -14,7 +14,6 @@ router.post('/uploadImage', multer.single('image'), imgUpload.uploadtogcs, (req,
     if(req.file && req.file.cloudStoragePublicUrl){
         data.imageUrl = req.file.cloudStoragePublicUrl
     }
-
     res.send(data)
 })
 

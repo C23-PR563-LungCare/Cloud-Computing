@@ -25,8 +25,8 @@ imgUpload.uploadtogcs = (req, res, next) =>{
     if(!req.file) return next()
 
 
-const gcsname = "bebas123.jpg";
-const file = bucket.file(gcsname);
+const gcsname = `${Date.now()}`; //name of the file to be uploaded to gcs
+const file = bucket.file(gcsname); //upload the file into gcs
 const stream = file.createWriteStream({
     metadata:{
         contentType: req.file.mimetype
