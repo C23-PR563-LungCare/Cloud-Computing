@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "lungcare-project-testing",
+  "private_key_id": "e9b3fd733225439fc7247380a506047d1e449bf8",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCZlXhWGgDX1wo+\n/Vv4zMgIkN8MNSFy4TS0nzj+s1TUkQ07Icr39s+8Y424+6Es1HMvk4niTwtgLMgh\n/EqOp9RMo6L7b8v1HQ5+J1TLgh3kzuiYFMkgrTr5Q7iVrc6yCKWR4+bHtJvLoPRm\npSBhmHlOu2FeV0w2Gqnh245NQpqnj5Q67SmTDpJT4OJ9SxPmO1ODr1ylPcX6fkyO\nVh9V/BM38xpjRBdXEa/o6P7U6IBF598kPuRNtb8hWqhTeWI7Njv9K+9iimI7o0SP\ny/CO9uZqiyl2fuPQM4/p/H4oXo78cxk9yYBFwWEh5Z+Mb4SX+sSESkaQDqE/5nfX\nO+6U6NP/AgMBAAECggEASLncOV1n380+11QPDLIf2NqNHFE+bRFSbWNmUEmoFl43\ndzRJ0gCIHyu/LQTOrhVOFA3XwZfviZO7E0jOH14+rCnioBCw8nlXZwqF3zZWpIYL\n4xQYp4YQQn+8dPhQQ8LPcFWMby3JhnPJt59ixYQ3kT4u3ccV2hrnLgHTESfEZypc\ny+upOXCdkoSddYIQjrH4T8ELsZv/DcazbjP2ARzdhRfPW4cKPQcD8i1m0bfczXzC\nxNO6uD0jfDki6J/+zeCW1PcCctd814ZVPVKb98dGMj6QiS8DLUFjz3hbSor5StRV\nZFRWFH9huv7bgDwe+eC43bLIEnAcAbDugRpfjqofVQKBgQDLTR8yiQusgcvoHkn+\nFfzg/LYv/QXbsW/mwdregq8/5pCcX621Wu9YRmeGBdcA+ZN9lRaynRyF0xcxO+W5\n894qxxocgbUfCXCcoF41fdJPr7vb/yNZDgJG710uLoSwH0isYqnifo7WyTEUfq/w\nOI/MxsLSZKA+6uIF+x25mqHJDQKBgQDBZSZETt06Vx9oxLp67eyVLydwsu2pyYKJ\nJawS+M1DfX1/Ccqo2DPwH3Pn/Ws4DjzcU5LLGXvH4YwHG5QTEr+RTbaG6K/QXzdW\n3p0ue1P/MmIYCu4r/GoazBqeWQ1kWWN9swn70d42K0fT4Wy3EqIUCzj3C3OtKFxw\n4tq8XuH2OwKBgQCHxAsPfoHzRALeEkwriJeF0H4CciCVZFtsaQ03B2Ltc5YjN6oT\nsJSiCPJdiEza89DRTt0HjvBbVmrokC2MDxXQz4Hag6xm+7DeiCIh6tKmMJ9t/Wan\ntDlFEdjSXHJ0A5BOvtzgys+tFFLYcvofnEY75Ih6ZIS3P7iNcfOZ3XApiQKBgCUx\nitaARFPABa5kh2i08VcPpooqH0MUGiK+OAW+C9v6+nPAMlWenv6DTgtD1acGNfY5\nrHWbBQ8/9Wo4h5XTeTw8senoPkfYyA/Q6HHUDid6TRtKntuew9k7f7MMdWLjPhsi\nn7zqc83/LOU26W2cC8fHEMGSVkDrDjw3pNGtfc+ZAoGAWHsyBiTV5Oga9MI/cone\nnBZjX7AFAafUyWZS9OnjhzY4VxR1wxCgcR4M72A5VaBXTGr4T/sOgzauDjsGiaxm\ndPGH6PVXvg7sSiYsR/4estLVutxzf6dDqZUCD3wT5RQoVQ0/6WsxdCy9nv8vUU7R\n8bg1AkF+b/rT4I2Hc/Sc6rg=\n-----END PRIVATE KEY-----\n",
+  "client_email": "api-enabler@lungcare-project-testing.iam.gserviceaccount.com",
+  "client_id": "106010103844163490121",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/api-enabler%40lungcare-project-testing.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

@@ -1,13 +1,15 @@
+'use strict'
 const {Storage} = require ('@google-cloud/storage');
 const fs = require('fs');
+//const dateFormat = require('dateformat');
 const path = require('path');
 
 //path menuju service account
-const pathKey = path.resolve('./serviceaccountbucket.json');
+const pathKey = path.resolve('./servicekey.json');
 
 const gcs = new Storage({
     projectId: 'lungcare-project-testing',
-    ketFilename: pathKey
+    keyFilename: './servicekey.json'
 })
 
 const bucketName = 'bucket-upload-testing';
@@ -23,7 +25,8 @@ imgUpload.uploadtogcs = (req, res, next) =>{
     if(!req.file) return next()
 
 
-const gcsname = "bebas"
+const gcsname = "bebas123.jpg";
+const file = bucket.file(gcsname);
 const stream = file.createWriteStream({
     metadata:{
         contentType: req.file.mimetype
