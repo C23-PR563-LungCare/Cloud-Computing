@@ -41,7 +41,6 @@ stream.on('error', (err) =>{
 stream.on('finish', () => {
     req.file.cloudStorageObject = gcsname
     req.file.cloudStoragePublicUrl = getPublicUrl(gcsname)
-    console.log('kelar');
     next()
 })
 
