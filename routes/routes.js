@@ -11,6 +11,19 @@ const multer = Multer({
     fileSize: 5 * 1024 * 1024
 })
 
+router.get('/history/:username', (req,res) =>{
+    const username = req.params.username;
+
+    const query = `select date, gcsLink from data_user where username = ?`
+    db.query(query, [username],(err, rows, field) =>{
+        if(err){
+            res.status(500).send({message: err.sqlMessage});
+        }else{
+            res.json(rows)
+        }
+    })
+})
+
 router.post('/insertImage', multer.single('image'), imgUpload.uploadtogcs, (req,res,next)=>{
     const username = req.body.username;
     const id = `${username}${Date.now()}`;
@@ -29,7 +42,7 @@ router.post('/insertImage', multer.single('image'), imgUpload.uploadtogcs, (req,
             if(err){
                 res.status(500).send({message: err.sqlMessage})
             }else{
-                res.send({message: 'Insert Sucessfully'})
+                res.send({message: 'Insert Successfully'})
             }
         })
     })
