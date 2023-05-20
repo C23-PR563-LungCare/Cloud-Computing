@@ -1,13 +1,13 @@
-#Endpoint
+# Endpoint
 (https://lungcare-project-testing.et.r.appspot.com/)
 
-##Status Testing
+## Status Testing
 URL
 - /
 Method
 - GET
 
-##Insert Image
+## Insert Image
 URL
 - /insertImage
 Method
@@ -20,7 +20,7 @@ Response
     message: "Insert Successfully"
 }
 
-##History
+## History
 URL
 - /history/:username
 Method
