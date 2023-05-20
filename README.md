@@ -2,30 +2,30 @@
 (https://lungcare-project-testing.et.r.appspot.com/)
 
 ## Status Testing
-URL
-- /
-Method
-- GET
+- URL
+    - /
+- Method
+    - GET
 
 ## Insert Image
-URL
-- /insertImage
-Method
-- POST
-Request Body
-- image as .jpg
-- username as string
-Response
+- URL
+    - /insertImage
+- Method
+    - POST
+- Request Body
+    - image as .jpg
+    - username as string
+- Response
 {
     message: "Insert Successfully"
 }
 
 ## History
-URL
-- /history/:username
-Method
-- GET
-Response
+- URL
+    - /history/:username
+- Method
+    - GET
+- Response
 [
     {
         "date": "2023-05-19T10:39:59.000Z",
