@@ -28,12 +28,14 @@
 - Response
 [
     {
-        "date": "2023-05-19T10:39:59.000Z",
-        "gcsLink": "https://storage.googleapis.com/bucket-upload-testing/1684492800277"
+        "date": "2023-05-19T03:39:59.000Z",
+        "gcsLink": "https://storage.googleapis.com/bucket-upload-testing/1684492800277",
+        "processResult": "Processing"
     },
     {
-        "date": "2023-05-19T10:41:00.000Z",
-        "gcsLink": "https://storage.googleapis.com/bucket-upload-testing/1684492861097"
+        "date": "2023-05-19T03:41:00.000Z",
+        "gcsLink": "https://storage.googleapis.com/bucket-upload-testing/1684492861097",
+        "processResult": "Processing"
     }
 ]
 

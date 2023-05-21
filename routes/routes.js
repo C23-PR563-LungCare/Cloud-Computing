@@ -11,10 +11,17 @@ const multer = Multer({
     fileSize: 5 * 1024 * 1024
 })
 
+//router to change the detail of user's file data. the change might be the result of processResult
+router.put('/history/:username', (req,res) => {
+    const username = req.params.username;
+    console.log(username);
+    res.status(200).send(username);
+})
+
 router.get('/history/:username', (req,res) =>{
     const username = req.params.username;
 
-    const query = `select date, gcsLink from data_user where username = ?`
+    const query = `select date, gcsLink, processResult from data_user where username = ?`
     db.query(query, [username],(err, rows, field) =>{
         if(err){
             res.status(500).send({message: err.sqlMessage});
