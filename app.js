@@ -5,8 +5,8 @@ const app = express()
 // const recordRouter = require('./routes/routes');
 const bodyParser = require('body-parser');
 
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: false}));
+app.use(express.json());
+app.use(express.urlencoded({extended: true}));
 // app.use(recordRouter);
 
 //post
