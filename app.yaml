@@ -1,2 +1,5 @@
-runtime: nodejs18
+runtime: nodejs16
 service: default
+env_variables:
+  ACCESS_TOKEN_SECRET: "4e2a0a71324e62095209040d427785ba75a605fd800e9ee97a26f8395c1f03d7e127c12da39ffc93191bf43e1718ea50162d1199be98be124672115c5f8194fb"
+  DB_PASSWORD: "LungCare123"
