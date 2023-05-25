@@ -1,7 +1,7 @@
 const db = require('../model/db');
 
 const getHistoryHandler = (req,res) => {
-    const username = req.params.username;
+    const username = req.user;
 
     const query = `select date, gcsLink, processResult from data_user where username = ?`
     db.query(query, [username],(err, rows, field) =>{
