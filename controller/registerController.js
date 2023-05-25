@@ -25,14 +25,8 @@ const handleNewUser = async(req, res) => {
                     message: err.message
                 });
             } else {
-                const token = jwt.sign(
-                    {username: username},
-                    process.env.ACCESS_TOKEN_SECRET,
-                    { expiresIn: "30s" }
-                );
                 res.status(201).send({
                     message: "user created successfully",
-                    token: token
                 });
             };
         });
