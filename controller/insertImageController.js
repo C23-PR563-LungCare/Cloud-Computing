@@ -3,7 +3,7 @@ const db = require('../model/db')
 
 
 const handleUploadtoGCS = (req, res) =>{
-    const username = req.body.username;
+    const username = req.user;
     const id = `${username}${Date.now()}`;
     const data = req.body;
     if(req.file && req.file.cloudStoragePublicUrl){
