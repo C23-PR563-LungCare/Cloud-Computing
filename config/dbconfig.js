@@ -1,16 +1,12 @@
-const mysql = require('mysql');
+require('dotenv').config();
 
-const connection = mysql.createConnection({
-    host :'34.101.85.1',
+const dbConfig = {
+    connectionLimit: 5,
+    host: '34.101.85.1',
     user: 'root',
-    database: 'capstone',
-    password: 'LungCare123'
-})
+    password: process.env.DB_PASSWORD,
+    database: 'capstone'
+}
 
-connection.connect(err => {
-    if(err) throw err;
-    console.log('Database Connected Successfully');
-})
-
-module.exports = connection;
+module.exports = dbConfig;
 

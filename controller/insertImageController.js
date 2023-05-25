@@ -1,4 +1,5 @@
-const db = require('../config/dbconfig')
+const db = require('../model/db')
+
 
 
 const handleUploadtoGCS = (req, res) =>{
