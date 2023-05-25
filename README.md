@@ -7,6 +7,32 @@
 - Method
     - GET
 
+## Login
+- URL
+    - /login
+- Method
+    - POST
+- Request Body
+    - username as string
+    - password as string
+- Response {
+    "message": "login successfull",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImRubnNhbmdnYXJhQGdtYWlsLmNvbSIsImlhdCI6MTY4NTAxNDcwOSwiZXhwIjoxNjg1MDIxOTA5fQ.qqvU86q7QHujq-DCDc4zs0jCvIK7V65-nDZ2iXw0nDo"
+}
+
+## Register
+- URL
+    - /register
+- Method
+    - POST
+- Request Body
+    - username as string
+    - password as string
+- Response {
+    "message": "user created successfully",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im5ld1VzZXIiLCJpYXQiOjE2ODUwMTQ4NTEsImV4cCI6MTY4NTAxNDg4MX0.6YtKmaj8Y0KOxB5Z26IVCF123kNeeb3ftA_8K0dxWk8"
+}
+
 ## Insert Image
 - URL
     - /insertImage
