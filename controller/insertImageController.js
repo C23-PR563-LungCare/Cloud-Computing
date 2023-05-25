@@ -1,5 +1,3 @@
-const express = require('express');
-const axios = require('axios');
 const db = require('../config/dbconfig')
 
 
@@ -23,24 +21,3 @@ const handleUploadtoGCS = (req, res) =>{
 }
 
 module.exports = {handleUploadtoGCS};
-
-
-// axios.post('',{
-//     username: username,
-//     date: date,
-//     images: data
-// })
-// .then(response => res.send(response))
-// .catch(err => res.send(err))
-
-//contoh menggunakan method get
-// axios.get('https://jsonplaceholder.typicode.com/users')
-//     .then(function (res){
-//         console.log(res.data);
-//     })
-//     .catch(function (err){
-//         console.log(err);
-//     })
-//     .finally(function(){
-//         //console.log('selesai');
-//     })
