@@ -1,11 +1,5 @@
 'use strict'
 const {Storage} = require ('@google-cloud/storage');
-const fs = require('fs');
-//const dateFormat = require('dateformat');
-const path = require('path');
-
-//path menuju service account
-const pathKey = path.resolve('./servicekey.json');
 
 const gcs = new Storage({
     projectId: 'lungcare-project-testing',
