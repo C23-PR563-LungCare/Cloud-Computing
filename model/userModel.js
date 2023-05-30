@@ -5,20 +5,6 @@ const User = function (user) {
     this.password = user.password;
 };
 
-// User.getAll = (result) => {
-//     let query = "SELECT username FROM users";
-
-//     db.query(query, (err, res) => {
-//         if(err) {
-//             console.log("error: ", err);
-//             result(null, err);
-//             return;
-//         }
-//         console.log("Users: ", res);
-//         result(null, res);
-//     });
-// };
-
 User.createUser = (newUser, result) => {
     db.query("INSERT INTO users SET ?", newUser, (err, res) => {
         if (err) {
@@ -46,24 +32,5 @@ User.findByUsername = (username) => {
     })
     
 }
-
-// User.updateUser = (username, newUser, result) => {
-//     db.query("UPDATE users SET username = ?, password = ? WHERE username = ?", [newUser.username, newUser.password, username], (err, res) => {
-//         if (err) {
-//             console.log("error: ", err);
-//             result(null, err);
-//             return;
-//         }
-
-//         if (res.affectedRows == 0) {
-//             result({ kind: "not_found" }, null);
-//             return;
-//         }
-
-//         console.log("updated tutorial: ", { username: username, ...newUser});
-//         result(null, { username: username, ...newUser});
-//     });
-// };
-
 
 module.exports = User;
