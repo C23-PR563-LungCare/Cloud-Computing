@@ -13,7 +13,7 @@
 - Method
     - POST
 - Request Body
-    - username as string
+    - email as string
     - password as string
 - Response 
 ```json
@@ -22,7 +22,6 @@
     "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImRubnNhbmdnYXJhQGdtYWlsLmNvbSIsImlhdCI6MTY4NTAxNDcwOSwiZXhwIjoxNjg1MDIxOTA5fQ.qqvU86q7QHujq-DCDc4zs0jCvIK7V65-nDZ2iXw0nDo"
 }
 ```
-for login username: danielkusuma@gmail.com password: danielkusuma
 
 ## Register
 - URL
@@ -32,6 +31,7 @@ for login username: danielkusuma@gmail.com password: danielkusuma
 - Request Body
     - username as string
     - password as string
+    - email as string
 - Response 
 ```json
 {

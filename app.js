@@ -22,6 +22,7 @@ app.get('/', (req, res) => {
   res.send('Response successful');
 })
 
+
 const PORT = process.env.PORT || 8000;
 app.listen(PORT, () => {
     console.log(`Server is up and listening on http://localhost:${PORT}`);

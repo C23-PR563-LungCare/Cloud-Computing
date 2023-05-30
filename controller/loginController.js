@@ -7,14 +7,14 @@ require('dotenv').config();
 
 const handleLogin = async(req, res) => {
     try{
-        const { username, password } = req.body;
-        if(!username || !password) return res.status(400).json({
-            'message': 'Username and password are required.'
+        const { email, password } = req.body;
+        if(!email || !password) return res.status(400).json({
+            'message': 'email and password are required.'
         });
-        const foundUser = await User.findByUsername(username);
+        const foundUser = await User.findByEmail(email);
         if(foundUser.kind === 'found' && (await bcrypt.compare(password, foundUser.password))){
             const token = jwt.sign(
-                { username: foundUser.username},
+                { email: foundUser.email, username: foundUser.username},
                 process.env.ACCESS_TOKEN_SECRET,
                 {expiresIn: "2h"}
             );

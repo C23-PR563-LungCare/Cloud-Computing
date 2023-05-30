@@ -6,19 +6,21 @@ const jwt = require('jsonwebtoken');
 require('dotenv').config();
 
 const handleNewUser = async(req, res) => {
-    const { username, password } = req.body;
-    if (!username || !password) return res.status(400).json({ 'message': 'Username and password are required.'});
+    const { username, email, password } = req.body;
+    console.log(username, email, password);
+    if (!email || !username || !password) return res.status(400).json({ 'message': 'all fields are required!'});
 
-    const duplicate = await User.findByUsername(username);
+
+    const duplicate = await User.findByEmail(email);
     if(duplicate.kind === 'found'){
         return res.status(409).send({
-            message: "User already exist"
+            message: "Email already exist"
         })
     }
     try{
         //hashing password
         const hashedPwd = await bcrypt.hash(password, 10)
-        const newUser = { "username": username, "password": hashedPwd };
+        const newUser = { "username": username, "password": hashedPwd, "email": email };
         User.createUser(newUser, (err, data) => {
             if (err) {
                     res.status(500).send({
