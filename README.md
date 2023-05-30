@@ -51,7 +51,7 @@
 - Response
 ```json
 {
-    message: "Insert Successfully"
+    "message": "Insert Successfully"
 }
 ```
 
