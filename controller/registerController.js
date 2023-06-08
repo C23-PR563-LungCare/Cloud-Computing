@@ -8,7 +8,11 @@ require('dotenv').config();
 const handleNewUser = async(req, res) => {
     const { username, email, password } = req.body;
     console.log(username, email, password);
-    if (!email || !username || !password) return res.status(400).json({ 'message': 'all fields are required!'});
+    if (!email || !username || !password) {
+        return res.status(400).json({ 'message': 'all fields are required!'})
+    } else if(password.length <= 7){
+        return res.status(400).json({ 'message': 'password is to short'})
+    }
 
 
     const duplicate = await User.findByEmail(email);
