@@ -18,21 +18,35 @@ const handleUploadtoGCS = (req, res) =>{
         image: buff
       })
       .then(function (response) {
-        console.log(response.data);
+        const prediction = response.data.predictions[0];
+        maxData = (Math.max(...prediction));
+        let result;
+        indexData = (prediction.indexOf(maxData)) + 1;
+
+        if(indexData === 1){
+          result = "Covid-19";
+        }else if(indexData === 2){
+          result = "Normal";
+        }else if(indexData === 3){
+          result = "Pneumonia"
+        }
+        
+        const query = "INSERT INTO data_user (id, username, gcsLink, processResult) values (?, ?, ?, ?)";
+
+        db.query(query, [id, username, data.imageURL, result], (err, rows, fields)=>{
+            if(err){
+                res.status(500).send({message: err.sqlMessage})
+            }else{
+                res.send({message: 'Result Found'})
+            }
+        })
+
       })
       .catch(function (error) {
         console.log(error);
       });
 
-    const query = "INSERT INTO data_user (id, username, gcsLink) values (?, ?, ?)";
-
-    db.query(query, [id, username, data.imageURL], (err, rows, fields)=>{
-        if(err){
-            res.status(500).send({message: err.sqlMessage})
-        }else{
-            res.send({message: 'Insert Successfully'})
-        }
-    })
+    
 }
 
 module.exports = {handleUploadtoGCS};
