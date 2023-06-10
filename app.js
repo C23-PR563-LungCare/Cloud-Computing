@@ -12,10 +12,11 @@ app.use('/login', require('./routes/login'));
 app.use('/insertImage', require('./routes/insertImage'));
 
 //put
-app.use(require('./routes/changeHistory')); //"/history/:username"
+app.use(require('./routes/changeHistory')); 
 
 //get
-app.use(require('./routes/getHistory')); //"/history/:username"
+app.use(require('./routes/getHistory')); 
+app.use(require('./routes/getHistoryDetail')); 
 
 
 app.get('/', (req, res) => {
