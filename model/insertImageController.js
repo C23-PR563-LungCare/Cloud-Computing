@@ -11,7 +11,6 @@ const handleUploadtoGCS = (req, res) =>{
 
     //Encode image buffer 
     let buff = Buffer.from(req.file.buffer);
-    let testing = buff.toString('base64');
 
 
     axios.post('https://model-api-dss5xq2j5q-et.a.run.app/testingModel', {
@@ -37,7 +36,11 @@ const handleUploadtoGCS = (req, res) =>{
             if(err){
                 res.status(500).send({message: err.sqlMessage})
             }else{
-                res.send({message: 'Result Found'})
+                res.send({message: 'Result Found',
+              id: id,
+            username: username,
+          gcsLink: data.imageURL,
+        result:result})
             }
         })
 
