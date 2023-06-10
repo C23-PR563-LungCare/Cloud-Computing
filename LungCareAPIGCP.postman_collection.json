@@ -1,0 +1,190 @@
+{
+	"info": {
+		"_postman_id": "3d480a25-efde-4fcb-b07a-169de4d302bc",
+		"name": "LungCareAPIGCP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://lungcare-project-testing.et.r.appspot.com/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"daniel140902\",\r\n    \"email\": \"daniel140902@gmail.com\",\r\n    \"password\": \"danielkusuma\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://lungcare-project-testing.et.r.appspot.com/register",
+					"protocol": "https",
+					"host": [
+						"lungcare-project-testing",
+						"et",
+						"r",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://lungcare-project-testing.et.r.appspot.com/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"danielkusuma@gmail.com\",\r\n    \"password\": \"danielkusuma\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://lungcare-project-testing.et.r.appspot.com/login",
+					"protocol": "https",
+					"host": [
+						"lungcare-project-testing",
+						"et",
+						"r",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://lungcare-project-testing.et.r.appspot.com/insertImage",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRhbmllbGt1c3VtYUBnbWFpbC5jb20iLCJ1c2VybmFtZSI6ImRhbmllbCBrdXN1bWEiLCJpYXQiOjE2ODYzMTY0OTcsImV4cCI6MTY4NjMyMzY5N30.LiSIo1TVyambKLmh641_8sssRN3JjD2rnAnqo0iwS54",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/wwwda/Downloads/covid.jpg"
+						},
+						{
+							"key": "username",
+							"value": "hellow",
+							"type": "default",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "https://lungcare-project-testing.et.r.appspot.com/insertImage",
+					"protocol": "https",
+					"host": [
+						"lungcare-project-testing",
+						"et",
+						"r",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"insertImage"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://lungcare-project-testing.et.r.appspot.com/history",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRhbmllbGt1c3VtYUBnbWFpbC5jb20iLCJ1c2VybmFtZSI6ImRhbmllbCBrdXN1bWEiLCJpYXQiOjE2ODYzOTY0MTAsImV4cCI6MTY4NjQwMzYxMH0.CouWQ80wCNO6VX7CHcjDZ-hVgUhEJ2-wVW3upz-kMy8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://lungcare-project-testing.et.r.appspot.com/history",
+					"protocol": "https",
+					"host": [
+						"lungcare-project-testing",
+						"et",
+						"r",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"history"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://lungcare-project-testing.et.r.appspot.com/detailHistory/:id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRhbmllbGt1c3VtYUBnbWFpbC5jb20iLCJ1c2VybmFtZSI6ImRhbmllbCBrdXN1bWEiLCJpYXQiOjE2ODYzOTY0MTAsImV4cCI6MTY4NjQwMzYxMH0.CouWQ80wCNO6VX7CHcjDZ-hVgUhEJ2-wVW3upz-kMy8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://lungcare-project-testing.et.r.appspot.com/detailHistory/:id",
+					"protocol": "https",
+					"host": [
+						"lungcare-project-testing",
+						"et",
+						"r",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"detailHistory",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "daniel kusuma1686395524679"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
