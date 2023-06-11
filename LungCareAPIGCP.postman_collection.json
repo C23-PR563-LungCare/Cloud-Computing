@@ -185,6 +185,45 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "https://lungcare-project-testing.et.r.appspot.com/news/:category",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRhbmllbGt1c3VtYUBnbWFpbC5jb20iLCJ1c2VybmFtZSI6ImRhbmllbCBrdXN1bWEiLCJpYXQiOjE2ODY0Nzg1MjksImV4cCI6MTY4NjQ4NTcyOX0.rsAEnJ5LL5NQpbRpRCmfbcpHSgrZFBCGcwy-iifS5J0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://lungcare-project-testing.et.r.appspot.com/news/:category",
+					"protocol": "https",
+					"host": [
+						"lungcare-project-testing",
+						"et",
+						"r",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"news",
+						":category"
+					],
+					"variable": [
+						{
+							"key": "category",
+							"value": "covid-19"
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
