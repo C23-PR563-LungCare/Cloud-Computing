@@ -19,7 +19,11 @@
 ```json
 {
     "message": "login successfull",
-    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImRubnNhbmdnYXJhQGdtYWlsLmNvbSIsImlhdCI6MTY4NTAxNDcwOSwiZXhwIjoxNjg1MDIxOTA5fQ.qqvU86q7QHujq-DCDc4zs0jCvIK7V65-nDZ2iXw0nDo"
+    "loginResult": {
+        "email": "email",
+        "username": "username",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRubnNhbmdnYXJhQGdtYWlsLmNvbSIsInVzZXJuYW1lIjoiaGVsbG93IiwiaWF0IjoxNjg2NDQ4MTU1LCJleHAiOjE2ODY0NTUzNTV9.2MpALEYF-3mqhF1-cQJ8MbR6-Z0oYhpxNDSF5Cd8Nkg"
+    }
 }
 ```
 
