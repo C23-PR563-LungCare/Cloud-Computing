@@ -108,3 +108,39 @@
     }
 ]
 ```
+
+## News
+- URL 
+    - /news/:category
+- Method
+    - GET
+- Headers
+    - Authorization: Bearer <token>
+- Request Params
+    - category as string
+- Response
+```json
+[
+    {
+        "newsID": 7,
+        "newsCategory": "Normal",
+        "title": "Paru-Paru",
+        "newsURL": "https://www.halodoc.com/kesehatan/paru-paru",
+        "imageURL": "https://d1vbn70lmn1nqe.cloudfront.net/prod/wp-content/uploads/2021/06/21081543/Paru-paru-1.jpg.webp"
+    },
+    {
+        "newsID": 8,
+        "newsCategory": "Normal",
+        "title": "Cara Menjaga Kesehatan Paru",
+        "newsURL": "https://yankes.kemkes.go.id/view_artikel/2022/cara-menjaga-kesehatan-paru",
+        "imageURL": "https://yankes.kemkes.go.id/img/bg-img/gambarartikel_1672806411_950600.png"
+    },
+    {
+        "newsID": 9,
+        "newsCategory": "Normal",
+        "title": "5 Macam Penyakit Paru yang Sering Terjadi",
+        "newsURL": "https://www.alodokter.com/macam-macam-penyakit-paru-paru-yang-perlu-anda-ketahui",
+        "imageURL": "https://res.cloudinary.com/dk0z4ums3/image/upload/v1648442790/attached_image/macam-macam-penyakit-paru-paru-yang-perlu-anda-ketahui-0-alodokter.jpg"
+    }
+]
+```
