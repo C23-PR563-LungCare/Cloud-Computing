@@ -21,7 +21,12 @@ const handleLogin = async(req, res) => {
 
             res.status(200).json({
                 message: "login successfull", 
-                token: token
+                loginResult: {
+                    email: email,
+                    username: foundUser.username,
+                    token: token
+                }
+
             });
         } else{
             res.status(400).json({
