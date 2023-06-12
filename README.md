@@ -99,14 +99,12 @@
     - id as string
 - Response
 ```json
-[
-    {
-        "id": "daniel kusuma1686395004344",
-        "date": "2023-06-10T04:03:43.000Z",
-        "gcsLink": "https://storage.googleapis.com/bucket-upload-testing/daniel kusuma_1686394999887",
-        "processResult": "Covid-19"
-    }
-]
+{
+    "id": "daniel kusuma1686395004344",
+    "date": "2023-06-10T04:03:43.000Z",
+    "gcsLink": "https://storage.googleapis.com/bucket-upload-testing/daniel kusuma_1686394999887",
+    "processResult": "Covid-19"
+}
 ```
 
 ## News
