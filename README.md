@@ -144,3 +144,17 @@
     }
 ]
 ```
+
+## Get User
+- URL 
+    - /getUser
+- Method
+    - GET
+- Headers
+    - Authorization: Bearer <token>
+- Response
+```json
+{
+    "username": "hellow"
+}
+```

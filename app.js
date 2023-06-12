@@ -18,6 +18,7 @@ app.use(require('./routes/changeHistory'));
 app.use(require('./routes/getHistory')); 
 app.use(require('./routes/getHistoryDetail')); 
 app.use(require('./routes/getNews'));
+app.use(require('./routes/getUser'));
 
 
 app.get('/', (req, res) => {
