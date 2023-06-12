@@ -154,9 +154,7 @@
     - Authorization: Bearer <token>
 - Response
 ```json
-[
-    {
-        "username": "hellow"
-    }
-]
+{
+    "username": "hellow"
+}
 ```
