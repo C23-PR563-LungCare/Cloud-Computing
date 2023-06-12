@@ -8,7 +8,7 @@ const getHistoryDetailHandler = (req,res) => {
         if(err){
             res.status(500).send({message: err.sqlMessage});
         }else{
-            res.json(rows)
+            res.json(rows[0]);
         }
     })
 }
