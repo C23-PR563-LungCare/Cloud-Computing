@@ -1,3 +1,27 @@
+# LungCare API
+main API for LungCare app.
+
+Language used : node.js v18
+
+Framework used : Express
+
+Database used : MySQL
+
+To run the API locally, you need to : 
+
+* install and configure MySQL in your machine
+* change the .env file with the required variables and values
+* run "npm install" to update the dependencies
+
+Google Cloud service : App Engine
+
+To run the API on Google Cloud Platform, you need to:
+
+* setup a MySQL database using CLoud SQL
+* setup a Cloud Storage bucket
+* create the .yaml file and write the deployment configuration, including runtime, service name, and .env variables
+* Deploy the service from Cloud Shell (command: 'gcloud app deploy)
+
 # Endpoint
 (https://lungcare-project-testing.et.r.appspot.com/)
 
