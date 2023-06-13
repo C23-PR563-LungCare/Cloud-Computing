@@ -1,4 +1,5 @@
 'use strict'
+require('dotenv').config();
 const {Storage} = require ('@google-cloud/storage');
 
 const gcs = new Storage({
@@ -6,11 +7,10 @@ const gcs = new Storage({
     keyFilename: './servicekey.json'
 })
 
-const bucketName = 'bucket-upload-testing';
-const bucket = gcs.bucket(bucketName);
+const bucket = gcs.bucket(process.env.GCP_BUCKET_NAME);
 
 function getPublicUrl(filename){
-    return 'https://storage.googleapis.com/'+bucketName+'/'+filename;
+    return 'https://storage.googleapis.com/'+process.env.GCP_BUCKET_NAME+'/'+filename;
 }
 
 let imgUpload ={};
